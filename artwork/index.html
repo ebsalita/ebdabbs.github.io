@@ -30,36 +30,4 @@ title: Artwork
 		</div>
 		{% endfor %}
 	</div>
-	<h2>Animation</h2>
-    <div class="row grid">
-		{% for video in site.data.animation %}
-			<div class="col-lg-4 col-sm-6 col-xs-12 card">
-				<div class="video-content">
-					<div class="video-wrapper">
-						<iframe src="{{video.src}}" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="title">{{video.title}}</div>
-					<div class="description">
-						{{video.medium}}, {{video.year}}
-					</div>
-				</div>
-			</div>
-		{% endfor %}
-    </div>
-	<h2>Design</h2>
-	<div class="row grid">
-		{% for design in site.data.design %}
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 card">
-            <div class="card-content">
-                <a href="/assets/img/art/{{design.file}}">
-                    <div class="card-image {{design.class}}"></div>
-                </a>
-                <div class="title">{{design.title}}</div>
-                <div class="description">
-                    {{design.medium}}, {{design.year}}
-                </div>
-            </div>
-        </div>
-		{% endfor %}
-	</div>
 </div>
